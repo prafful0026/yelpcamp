@@ -1,0 +1,33 @@
+<%- include("partials/header") %>
+
+<!-- <form action="/campgrounds" method="post">
+    <input type="text" name="name" placeholder="name">
+    <input type="text" name="image" placeholder="url">
+    <button type="submit">+</button>
+</form> -->
+<div class="container my-3">
+    <h1 style="text-align: center;">create a campground</h1>
+
+    
+<div style="width: 30%;margin: 0 auto;">
+    <form action="/campgrounds" method="post">
+        <div class="form-group">
+          <input type="text"  name="name" class="form-control"  placeholder="Name">
+          <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" name="image" placeholder="Image Url">
+        </div>
+        <!-- <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div> -->
+        <div class="form-group">
+             <button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+        </div>
+       
+      </form>
+</div>
+
+</div>
+<%- include("partials/footer") %>
